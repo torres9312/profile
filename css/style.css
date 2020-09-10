@@ -52,6 +52,13 @@
     
     
 }
+.text-carousel{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
 .txtVideo{
     width: 800px;
@@ -128,6 +135,11 @@ hr{
 }
 
 
+.img-web{
+    width: 700px;
+    
+}
+
 @font-face{
     font-family: "ManropeBold";
     src: url("../fonts/Manrope-Bold.ttf");
@@ -167,7 +179,7 @@ hr{
 
 strong{
     font-family: "Stag-SansBold";
-    line-height: 10px;
+    line-height: 1px;
 }
 
 body{
@@ -322,6 +334,29 @@ header img{
     align-items: flex-end;
 }
 
+footer{
+    height: 150px;
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB);
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/programer.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
 
 @media screen and (max-width: 1060px)
 {
@@ -425,5 +460,13 @@ header img{
 
     .svg-background{
         height: 45px;
+    }
+
+    .img-web{
+        width: 400px;
+    }
+
+    footer{
+        height: 100px;
     }
 }
