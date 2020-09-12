@@ -1,13 +1,18 @@
 var cont;
 var imgcont;
+var cont3;
 var LIMIT = 3;
 var MIN = 1;
+
+var LIMIT3 = 6;
 
 window.onload = function() {
     $('#video1').show();
     cont = 1;
     $('#img1').show();
     imgcont = 1;
+    $('#imgLaravel1').show();
+    cont3 = 1;
   };
 
 function advance(e){
@@ -59,5 +64,30 @@ function prev(e){
         $("#img"+imgcont).hide();
         imgcont--;
         $("#img"+imgcont).show();  
+    }
+}
+
+function next3(e){
+
+    if(cont3 == LIMIT3){
+        $("#imgLaravel"+cont3).hide();
+        $("#imgLaravel"+MIN).show();
+        cont3 = 1;
+    }else{
+        $("#imgLaravel"+cont3).hide();
+        cont3++;
+        $("#imgLaravel"+cont3).show();  
+    }
+}
+function prev3(e){
+    
+    if(cont3 == 1){
+        $("#imgLaravel"+cont3).hide();
+        $("#imgLaravel"+LIMIT3).show();
+        cont3 = LIMIT3;
+    }else{
+        $("#imgLaravel"+cont3).hide();
+        cont3--;
+        $("#imgLaravel"+cont3).show();  
     }
 }

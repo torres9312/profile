@@ -335,21 +335,21 @@ header img{
 }
 
 footer{
-    height: 150px;
+    height: 160px;
     background: #00B4DB;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0083B0, #00B4DB);
 }
 
 
+.wave-footer{
+    top: -20;
+}
+
+
 .parallax {
-    /* The image used */
     background-image: url("../img/programer.jpg");
-  
-    /* Full height */
     height: 100%;
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -446,7 +446,13 @@ footer{
     }
 
     video{
-        width:400px
+        width:400px;
+    }
+
+    iframe{
+        width:400px;
+        height: 300px;
+
     }
 
     .nav-items{
