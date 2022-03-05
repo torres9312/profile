@@ -44,7 +44,7 @@ try {
 
     
     $mail->setFrom($email, $name);
-    $mail->addAddress('torres9312@hotmail.com', 'Contacto');     // Add a recipient
+    $mail->addAddress('towhers@gmail.com', 'Contacto');     // Add a recipient
    
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Mensaje de '.$name;
