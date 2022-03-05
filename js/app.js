@@ -223,7 +223,7 @@ function clearformEmail(){
 
 function sendContactData(data){
     $.ajax({
-        url: 'functions/send_email.php',
+        url: 'functions/email.php',
         type: 'POST',
         dataType: 'json',
         processData: false,
