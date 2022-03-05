@@ -222,6 +222,14 @@ function clearformEmail(){
 
 
 function sendContactData(data){
+    
+    
+    Toast.fire({
+        icon: 'success',
+        title: 'Mensaje enviado,<br> me pondré en contacto con usted.'
+    });
+    
+    /*
     $.ajax({
         url: 'functions/email.php',
         type: 'POST',
@@ -256,6 +264,8 @@ function sendContactData(data){
         })
         console.log(res);
     });
+    
+    */
 }
 
 
